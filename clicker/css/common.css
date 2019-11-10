@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding: 0;
+}
+h1{
+    display: inline;
+}
+canvas{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 150px;
+}
+canvas:active{
+    transform: scale(0.9);
+}

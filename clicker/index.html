@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clicker</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+
+    <h1>Кол-во кликов: <h1 id="num">0</h1>
+    </h1>
+    <canvas id="canvas" width="300px" height="300px" onclick="click_inc()"></canvas>
+
+
+    <script>
+        'use strict';
+
+        let cnv = document.getElementById("canvas");
+        let dim = cnv.getContext('2d');
+
+        dim.fillStyle = "red";
+        dim.fillRect(0, 0, 300, 300);
+        dim.font= "45pt Arial"
+        dim.fillStyle = "black";
+        dim.fillText("PUSH ME", 10, 170);
+        
+
+        let click = 0;
+        function click_inc(){
+            click++;
+            document.getElementById("num").innerText = click;
+        }
+
+    </script>
+</body>
+
+</html>
