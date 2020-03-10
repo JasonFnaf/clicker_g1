@@ -1,0 +1,21 @@
+document.getElementById("my").onclick = () => {
+    let inp1 = document.getElementById("kuk").value;
+    function fact(inp1) {
+        return (inp1 !=1) ? fact(inp1 - 1) : 1;
+    }
+    console.log(fact(inp1));
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+  <input type="text" id="kuk">
+  <button id="my">=</button>
+  <script src="hor.js"></script>
+</body>
+</html>
